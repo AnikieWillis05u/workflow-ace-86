@@ -105,7 +105,7 @@ function Summarizer() {
   const [title, setTitle] = useState("");
   const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
   const [attendees, setAttendees] = useState("");
-  const [type, setType] = useState(meetingTypes[0]);
+  const [type, setType] = useState<string>("Team Standup");
   const [notes, setNotes] = useState("");
   const [loading, setLoading] = useState(false);
   const [summary, setSummary] = useState<MeetingSummary | null>(null);
